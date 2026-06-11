@@ -1,11 +1,11 @@
 ---
 name: siemens-color-scheme
-description: Apply Siemens brand color scheme, key visuals, and design guidelines when writing frontend code. Use when the user explicitly asks for Siemens colors, Siemens design, Siemens branding, Siemens style, key visuals, or Siemens UI. Also when the user mentions Petrol, Siemens palette, Dayu UI, or Siemens Xcelerator. Based on Siemens Corporate Design specification (State: 2025-02-17).
+description: Apply Siemens brand color scheme and design guidelines when writing frontend code. Use when the user explicitly asks for Siemens colors, Siemens design, Siemens branding, or Siemens style. Also when the user mentions Petrol, Siemens palette, or Dayu UI. Based on Siemens Corporate Design color specification (State: 2025-02-17).
 ---
 
-# Siemens Design System
+# Siemens Color Scheme
 
-Apply Siemens brand design guidelines (State: 2025-02-17) when writing TailwindCSS or inline styles for UI components. Covers color scheme, key visuals, and interaction patterns.
+Apply Siemens brand design guidelines (State: 2025-02-17) when writing TailwindCSS or inline styles for UI components.
 
 ## Color Hierarchy
 
@@ -131,22 +131,6 @@ shadow-soft: 0 1px 2px rgba(51,51,83,0.05), 0 1px 3px rgba(51,51,83,0.08)
 shadow-card: 0 2px 4px rgba(51,51,83,0.04), 0 1px 2px rgba(51,51,83,0.06)
 ```
 
-## Key Visuals
-
-Siemens uses a structured visual matrix organized by context (WHY/HOW/WHAT) with four visual types: Shapes, Full-bleed images, Illustrations, Product images.
-
-**Brand Motifs** (use in hero sections, key visuals):
-- Transformation → Infinity symbol (∞)
-- Moving Forward → Double arrow (»)
-- Siemens Xcelerator → X-shaped icon
-- Sustainability → Circle (○)
-
-**Technology Portfolio Icons**: Digital Twin, Cloud, AI, Cybersecurity, Electrification, Smart Grid, Smart City, Transportation, Real Estate, Additive Manufacturing — all styled in Petrol on dark backgrounds, geometric and minimal.
-
-**Typography in visuals**: SiemensSans Pro, headlines uppercase Bold, taglines in `light-petrol` on dark, product names in white.
-
-For detailed visual matrix, icon specs, and layout principles, see [KEY_VISUALS.md](KEY_VISUALS.md).
-
 ## Key Rules
 
 ### Color Selection
@@ -174,3 +158,16 @@ For detailed visual matrix, icon specs, and layout principles, see [KEY_VISUALS.
 16. **Dark background highlights**: Use Light Petrol (`#00c1b6`).
 17. **Light background highlights**: Use Siemens Petrol (`#009999`), only at 17pt+ for WCAG 2.1 contrast.
 18. **Text hierarchy**: `deep-blue-80` → `deep-blue-60` → `deep-blue-40` → `deep-blue-20`.
+
+## Roll-up Banner (易拉宝) Design
+
+When designing roll-up banners or vertical print layouts:
+
+- **Title typography**: Use Bold (Black) weight for emphasis + Regular weight for body. Bold portions use Siemens Green (`bold-green` `#00ffb9` or `soft-green` `#00d7a0`).
+- **Siemens LOGO placement**: Position between 1S and 2S from the top (S = unit based on layout grid). Default is 1.5S.
+- **Lower third zone**: Do NOT place primary text or key messages in the bottom 1/3 of the banner. This area is for illustrations, decorative visuals, or secondary information.
+- **Key content placement**: Most important information (headline, value proposition) belongs in the upper 2/3 of the layout.
+- **Three layout patterns**: (A) Event/Workshop — agenda cards; (B) Information/Strategy — numbered sections; (C) Product/Guide — touchpoint walkthroughs + mascot.
+- **Common rules**: `deep-blue` background, white logo, teal headline emphasis, rounded cards, "Powered by IT DA" footer.
+
+For detailed roll-up banner layout specs and reference examples, see [KEY_VISUALS.md](KEY_VISUALS.md).

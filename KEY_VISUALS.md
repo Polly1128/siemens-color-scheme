@@ -77,3 +77,75 @@ Use these icon categories in UI components, navigation, and technology sections.
 3. **Motifs and icons** always rendered in Petrol/Green/Blue tones, never in secondary colors
 4. **Full-bleed images** with dark overlay (`bg-deep-blue/60`) for text readability
 5. **Technology icons** in grid layout, consistent sizing, Petrol colored
+
+## Roll-up Banner (易拉宝) Layout
+
+### Grid Unit
+- **S** = layout grid unit (proportional to banner width)
+- All spacing and positioning measured in S units
+
+### Logo Zone
+- Siemens LOGO placed at **1S–2S** from top edge (default: **1.5S**)
+- Logo color: White on dark backgrounds, Deep Blue on light backgrounds
+- Minimum clear space: 0.5S around logo on all sides
+
+### Content Zones
+```
+┌─────────────────────────┐
+│  [LOGO at 1.5S]         │  ← Top zone: Brand identity
+│                          │
+│  ╔══════════════════╗    │
+│  ║  HEADLINE (Bold) ║    │  ← Upper 2/3: Key messages
+│  ║  in Siemens Green║    │
+│  ║  Body (Regular)  ║    │
+│  ╚══════════════════╝    │
+│──────────────────────────│
+│                          │
+│  🖼 Illustration /      │  ← Lower 1/3: Illustrations,
+│     Decorative visual    │     secondary info only
+│                          │
+└─────────────────────────┘
+```
+
+### Typography Rules
+- **Headline emphasis words**: SiemensSans Pro Bold/Black in Siemens Green
+- **Headline regular words**: SiemensSans Pro Regular in White (dark bg) or Deep Blue (light bg)
+- **Body text**: SiemensSans Pro Regular, smaller size
+
+### Dos and Don'ts
+- ✅ Place headlines and key messages in upper 2/3
+- ✅ Use lower 1/3 for illustrations and decorative elements
+- ✅ Use Bold Green for emphasis in headlines
+- ❌ Do NOT place primary text in the bottom 1/3
+- ❌ Do NOT use secondary colors for headline emphasis
+
+### Reference Examples
+
+Three verified Siemens banner designs share these common patterns:
+
+**Pattern A — Event/Workshop Banner** (e.g. "AI CHALLENGE"):
+- SIEMENS logo → Event title (teal) → Co-branding strip → Agenda/schedule cards → Footer
+- Uses rounded card containers for agenda items
+- Co-branding shown in tagline banner (rounded green-blue bg)
+
+**Pattern B — Information/Strategy Banner** (e.g. "AI in Siemens: the Efficiency Revolution"):
+- SIEMENS logo → Headline (teal) → Numbered sections (1, 2, 3, 4…) → Footer
+- Each section in dark rounded card with teal header bar
+- Numbered circles for step-by-step flow
+- Data visualization (bar charts, icon grids) in middle sections
+
+**Pattern C — Product/Guide Banner** (e.g. "Spiridon AAE Assist"):
+- SIEMENS logo → Headline (product name in teal) → Touchpoint walkthroughs → Mascot illustration → Footer
+- "TOUCHPOINT 1/2" headers with teal-and-blue striped bar
+- Step-by-step UI flow with screenshots and arrows (→)
+- Mascot/illustration in lower 1/3 area
+
+**Common Rules Across All Three**:
+1. Background: `deep-blue` (`#000028`) — always
+2. Logo: White SIEMENS, top-left, 1.5S from top
+3. Headlines: White body + teal/Petrol emphasis words
+4. Content cards: Rounded corners, slightly lighter bg than base (`deep-blue-95` or purple-tinted)
+5. Section headers: Teal/Petrol colored bars or strips
+6. Lower 1/3: Illustrations, mascots, or decorative elements — never key text
+7. Footer: "Powered by IT DA" + copyright, small text
+8. Accent tags/labels: Rounded pill badges in `light-petrol` or `bold-green` bg
